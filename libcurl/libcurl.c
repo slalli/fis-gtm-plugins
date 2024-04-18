@@ -240,7 +240,7 @@ gtm_status_t curl_do(int argc,
   if (hs) curl_easy_setopt(curl_handle, CURLOPT_HTTPHEADER, hs);
 
   /* Timeout */
-  if (argc >= 7 && timeout)
+  if (argc >= 7 )
   {
     curl_easy_setopt(curl_handle, CURLOPT_CONNECTTIMEOUT_MS, timeout);
   }
